@@ -7,7 +7,10 @@ const app=express();
 app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cors());
-import userRoutes from './routes/users'
+
+import userRoutes from './routes/users';
+import authRoutes from './routes/auth';
+app.use("/api/auth",authRoutes);
 app.use("/api/users",userRoutes)
 app.listen(7001,()=>{
     console.log("server running on localhost:7001");
