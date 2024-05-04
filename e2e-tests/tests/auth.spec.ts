@@ -29,7 +29,7 @@ await page.getByRole("link",{name:"Create an account here!"}).click();
 
  await page.locator("[name=firstName]").fill("test_firstName");
  await page.locator("[name=lastName]").fill("testa_lastName");
-  await page.locator("[name=email]").fill("tests_mail@mail.com");
+  await page.locator("[name=email]").fill("tests1_mail@mail.com");
    await page.locator("[name=password]").fill("test_password");
      await page.locator("[name=confirmPassword]").fill("test_password");
 
