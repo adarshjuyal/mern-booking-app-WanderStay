@@ -1,5 +1,6 @@
-import { NextFunction ,Request,Response} from "express-serve-static-core";
-import jwt, { JwtPayload } from 'jsonwebtoken';
+import { NextFunction, Request, Response } from "express";
+import jwt, { JwtPayload } from "jsonwebtoken";
+
 declare global {
   namespace Express {
     interface Request {
